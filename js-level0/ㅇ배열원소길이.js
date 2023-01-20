@@ -7,9 +7,19 @@
 
 function solution(strlist) {
   let answer = [];
-  const answerLength = (strlist) => {
-    for (let i = 0; i < answer.length; i++) {}
-  };
+  // const answerLength = (strlist) => {
+  //   for (let i = 0; i < strlist.length; i++) {
+  //     answer.push(strlist[i]);
+  //   }
+  // };
+  for (let i = 0; i < strlist.length; i++) {
+    answer.push(strlist[i].length);
+  }
 
-  return answerLength;
+  return answer;
+}
+
+function solution(strlist) {
+  let answer = strlist.map((item) => item.length);
+  return answer;
 }
