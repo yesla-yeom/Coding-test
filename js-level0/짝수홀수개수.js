@@ -6,6 +6,9 @@
 // 0 ≤ num_list의 원소 ≤ 1,000
 
 function solution(num_list) {
-  var answer = [];
-  return answer;
+  let isEven = (num_list) => {
+    return num_list % 2 === 0;
+  };
+  let arrEven = isEven.filter(num_list).length;
+  return [arrEven, arrEven + 1];
 }
